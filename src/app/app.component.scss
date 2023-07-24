@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+.cart {
+    margin: 50px auto;
+    padding: 15px;
+    background: rgba( 255, 255, 255, 0.75);
+    display: grid;
+    place-items: center;
+    gap: 10px 0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    .label-input {
+        display: flex;
+        justify-content: left;
+        gap: 0 7px;
+        width: 500px;
+        max-width: 500px;
+        min-width: 250px;
+
+        input {
+            height: 20px;
+            width: 30vw;
+        }
+
+        .message-error {
+            color: red
+        }
+    }
+}
